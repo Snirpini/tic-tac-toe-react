@@ -1,0 +1,10 @@
+.cell {
+    --cell-size: 100px;
+
+    width: var(--cell-size);
+	height: var(--cell-size);
+	border: 1.5px solid #FFF;
+	background-color: #2e2e2e;
+	font-size: 70px;
+	color: #FFF;
+}

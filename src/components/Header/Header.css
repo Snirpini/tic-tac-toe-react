@@ -1,0 +1,18 @@
+.gameTitle {
+	text-shadow: 2px 2px 5px #2e2e2e;
+	font-size:48px;
+	margin-bottom: 10px;
+}
+
+.nowPlaying {
+	background-color: #FFF;
+	color: #3e3e3e;
+	font-weight: bold;
+	font-size: 13px;
+	padding: 10px 0 10px 0;
+	border-radius: 7px;
+	opacity: 0.9;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
