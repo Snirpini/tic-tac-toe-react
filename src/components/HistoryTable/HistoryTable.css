@@ -4,4 +4,13 @@
 
 .historyTable {
     margin-top: 20px;
+    /* min-width: 200px; */
+}
+
+.History {
+    /* background-color: #4c516d; */
+    border-radius: 20px;
+    height: 200px;
+    padding: 0 10px 10px 10px;
+    overflow-y: auto;
 }

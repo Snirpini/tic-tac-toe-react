@@ -46,7 +46,7 @@ const Board = ({ restartValue, currentPlayer, swapPlayers, gameOver }) => {
 
     for (const combo of winningCombos) {
       let [a, b, c] = combo;
-      if (cells[a] && cells[a] == cells[b] && cells[b] == cells[c]) {
+      if (cells[a] && cells[a] === cells[b] && cells[b] === cells[c]) {
         return true;
       }
     }
