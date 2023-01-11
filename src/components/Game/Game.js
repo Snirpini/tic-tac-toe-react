@@ -32,10 +32,13 @@ const Game = () => {
   }
 
   function saveGameResultToHistory(isDraw) {
-    const today = new Date(Date.now());
-    let gameResult = {winningPlayer: isDraw ? "draw" : currentPlayer, gameDate: today.toDateString()};
-
+    let gameResult = {winningPlayer: isDraw ? "draw" : currentPlayer, gameDate: getTodayDate()};
     addGameToHistory(gameResult);
+  }
+
+  function getTodayDate() {
+    const date = new Date();
+    return date.toLocaleDateString("en-GB", {day: "2-digit", month: "2-digit", year: "numeric" });
   }
 
   return (

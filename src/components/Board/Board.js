@@ -61,7 +61,7 @@ const Board = ({ restartValue, currentPlayer, swapPlayers, gameOver }) => {
   }
 
   function renderCell(i) {
-    return <Cell value={cells[i]} handleClick={() => handleClick(i)} />;
+    return <Cell key={i} value={cells[i]} handleClick={() => handleClick(i)} />;
   }
 
   function renderBoard() {

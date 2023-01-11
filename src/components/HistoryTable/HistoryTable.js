@@ -7,9 +7,9 @@ const HistoryTable = () => {
   const { history } = useContext(HistoryContext);
 
   function renderHistoryTableData() {
-    return history.map(({ winningPlayer, gameDate }) => {
+    return history.map(({ winningPlayer, gameDate }, index) => {
       return (
-        <tr>
+        <tr key={index}>
           <td>{winningPlayer}</td>
           <td>{gameDate}</td>
         </tr>
@@ -21,11 +21,13 @@ const HistoryTable = () => {
     <div className="History">
       {history.length > 0 && (
         <table className="historyTable">
-          <tr>
-            <th>Winning Player</th>
-            <th>Game Date</th>
-          </tr>
-          {renderHistoryTableData()}
+          <thead>
+            <tr>
+              <th>Winning Player</th>
+              <th>Game Date</th>
+            </tr>
+          </thead>
+          <tbody>{renderHistoryTableData()}</tbody>
         </table>
       )}
     </div>
